@@ -1,0 +1,28 @@
+* Instalar maquina virtual
+------------------------------
+https://code.djangoproject.com/wiki/OracleTestSetup
+
+instalar cx_oracle
+https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html#id4
+pip install cx_oracle
+
+instalar instantclient
+https://www.oracle.com/cl/database/technologies/instant-client/winx64-64-downloads.html#ic_winx64_inst
+instantclient-basic-windows.x64-19.6.0.0.0dbru
+
+https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0
+VC_redist.x64.exe
+
+* Hacer migraciones
+------------------------------
+Cada vez que los cambiemos o agreguemos nuevos Models, debemos ejecutar (detecta modelos como vÃ¡lidos)
+py manage.py makemigrations
+
+* Crea modelos en base de datos
+-------------------------------
+py manage.py migrate
+
+
+* Crear usuario panel de administrador
+---------------
+py manage.py createsuperuser
